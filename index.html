@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HOT SALE 🔥 Recursos Educativos · Mundial 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&FINALI
+family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -152,14 +153,14 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <body>
 
 <!-- TOP BAR -->
-<div class="topbar">🔥 <span>HOT SALE · 11, 12 y 13 de mayo</span> · Hasta 27% OFF · Solo 3 días 🔥</div>
+<div class="topbar">🔥 <span>HOT SALE · hasta el 30 de mayo</span> · Hasta 27% OFF · SE EXTIENDE 16 días - No te quedes fuera del mundial 🔥</div>
 
 <!-- HERO -->
 <section class="hero">
   <div class="hs-logo">🔥 HOT SALE <small>2026</small></div>
-  <p class="hero-eye">Oferta exclusiva · 11 al 13 de mayo</p>
+  <p class="hero-eye">Oferta exclusiva · Hasta el 30 de mayo</p>
   <h1>RECURSOS EDUCATIVOS<br><span class="ya">MUNDIAL 2026</span><br><span class="ha">AL MEJOR PRECIO</span></h1>
-  <p class="hero-sub">3 días. 3 productos. 1 precio increíble. Solo hasta el 13 de mayo.</p>
+  <p class="hero-sub"> 16 días. 3 productos. 1 precio increíble. Solo hasta el 30 de mayo.</p>
   <div class="hero-cd">
     <div class="cd-item"><span class="cd-num" id="dias">--</span><span class="cd-lbl">Días</span></div>
     <span class="cd-sep">:</span>
@@ -182,7 +183,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 
 <!-- URGENCIA -->
 <div class="urgencia">
-  <p>⚡ <span>HOT SALE</span> · Termina el 13 de mayo a medianoche · <span id="dias-b">--</span> días restantes ⚡</p>
+  <p>⚡ <span>HOT SALE</span> · Termina el 30 de mayo a medianoche · <span id="dias-b">--</span> días restantes ⚡</p>
 </div>
 
 <!-- BUNDLE -->
@@ -198,7 +199,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
       <span class="chip">⚡ Descarga inmediata</span>
     </div>
     <div class="box">
-      <p class="box-title">Precio Hot Sale · 11 al 13 de mayo únicamente</p>
+      <p class="box-title">Precio Hot Sale · Hasta el 30 de mayo únicamente</p>
       <div class="p-row">
         <span class="p-pais">🇦🇷 Argentina</span>
         <div style="text-align:right">
@@ -217,7 +218,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
       <a href="https://pay.hotmart.com/G105764963E" class="btn btn-hot" target="_blank">🔥 Compra Internacional por Hotmart</a>
       <a href="https://wa.me/5492983527029?text=BUNDLE%20HOTSALE" class="btn btn-wa" target="_blank" style="margin-top:8px">💬 Consultar por WhatsApp</a>
     </div>
-    <p class="bundle-note">⏰ Oferta válida solo 11, 12 y 13 de mayo 2026 · Descarga inmediata al pagar</p>
+    <p class="bundle-note">⏰ Oferta EXTENDIDA hasta el 30 de mayo 2026 · Descarga inmediata al pagar</p>
   </div>
 </section>
 
@@ -375,7 +376,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 
 <!-- CTA FINAL -->
 <section class="cta-final">
-  <h2>🔥 HOT SALE TERMINA EL 13 DE MAYO</h2>
+  <h2>🔥 HOT SALE TERMINA EL 30 DE MAYO</h2>
   <p>No dejes pasar el mejor precio del año. El Mundial arranca el 11 de junio.</p>
   <a href="#bundle">🔥 Ir al Bundle Hot Sale</a>
 </section>
@@ -383,31 +384,69 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <!-- FOOTER -->
 <footer>
   <p><strong>Recursos Educativos · Mundial 2026</strong></p>
-  <p>🔥 Hot Sale · 11, 12 y 13 de mayo de 2026 · Oferta por tiempo limitado</p>
+  <p>🔥 Hot Sale · PROMO EXTENDIDA HASTA EL 30 de mayo de 2026 · Oferta por tiempo limitado</p>
+
   <p><a href="https://wa.me/5492983527029">💬 Consultas: +54 9 2983 527029</a></p>
 </footer>
-
 <script>
 function tick(){
-  var end=new Date('2026-05-14T00:00:00');
-  var now=new Date();
-  var diff=end-now;
-  if(diff<=0){
-    document.querySelector('.topbar').innerHTML='⏰ Hot Sale finalizado · ¡Gracias por participar!';
-    ['dias','horas','mins','segs'].forEach(function(id){document.getElementById(id).textContent='00'});
+  // FECHA EXTENDIDA
+  var end = new Date('2026-05-30T23:59:59');
+  var now = new Date();
+  var diff = end - now;
+
+  // SI YA TERMINÓ
+  if(diff <= 0){
+    document.querySelector('.topbar').innerHTML =
+      '⏰ Hot Sale PROMO EXTENDIDA HASTA EL 30 DE MAYO · ¡No te quedes fuera del Mundial!';
+    
+    ['dias','horas','mins','segs'].forEach(function(id){
+      document.getElementById(id).textContent = '00';
+    });
     return;
   }
-  var d=Math.floor(diff/86400000);
-  var h=Math.floor((diff%86400000)/3600000);
-  var m=Math.floor((diff%3600000)/60000);
-  var s=Math.floor((diff%60000)/1000);
-  document.getElementById('dias').textContent=d;
-  document.getElementById('horas').textContent=String(h).padStart(2,'0');
-  document.getElementById('mins').textContent=String(m).padStart(2,'0');
-  document.getElementById('segs').textContent=String(s).padStart(2,'0');
-  var b=document.getElementById('dias-b');if(b)b.textContent=d;
+
+  // CÁLCULOS
+  var d = Math.floor(diff / 86400000);
+  var h = Math.floor((diff % 86400000) / 3600000);
+  var m = Math.floor((diff % 3600000) / 60000);
+  var s = Math.floor((diff % 60000) / 1000);
+
+  // ACTUALIZAR HTML
+  document.getElementById('dias').textContent = d;
+  document.getElementById('horas').textContent = String(h).padStart(2,'0');
+  document.getElementById('mins').textContent = String(m).padStart(2,'0');
+  document.getElementById('segs').textContent = String(s).padStart(2,'0');
+
+  // SI TENÉS UN SEGUNDO CONTADOR (opcional)
+  var b = document.getElementById('dias-b');
+  if(b) b.textContent = d;
 }
-tick();setInterval(tick,1000);
+
+tick();
+setInterval(tick, 1000);
 </script>
+
 </body>
+<div class="promo-extendida">
+  🔥 ¡PROMOCIÓN EXTENDIDA HASTA EL 30 DE MAYO! 🔥
+</div>
+
+<style>
+.promo-extendida {
+  background: #ff004c;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 0;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  letter-spacing: 0.5px;
+}
+</style>
+
 </html>
