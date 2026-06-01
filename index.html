@@ -1,183 +1,345 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Mega Pack Mundial 2026 – Recursos para Docentes y Familias</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #0b1230; color: #ffffff; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
-    h1, h2, h3 { margin: 0 0 10px; }
-    .hero { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
-    .hero-text { flex: 1 1 320px; }
-    .hero-img { flex: 1 1 320px; text-align: center; }
-    .hero-img img { max-width: 100%; border-radius: 12px; }
-    .badge-ahorro { display: inline-block; background: #ffcc00; color: #000; padding: 6px 12px; border-radius: 999px; font-weight: bold; margin-bottom: 10px; }
-    .precio-box { background: #111842; border-radius: 12px; padding: 20px; margin-top: 10px; border: 2px solid #00ff99; position: relative; }
-    .precio-box::before {
-      content: "OPCIÓN MÁS ELEGIDA";
-      position: absolute;
-      top: -14px;
-      left: 16px;
-      background: #00ff99;
-      color: #000;
-      font-size: 11px;
-      font-weight: bold;
-      padding: 3px 8px;
-      border-radius: 999px;
-    }
-    .precio-actual { font-size: 26px; font-weight: bold; color: #00ff99; }
-    .precio-tachado { text-decoration: line-through; color: #bbbbbb; font-size: 16px; margin-right: 8px; }
-    .ahorro { color: #ffcc00; font-weight: bold; font-size: 16px; }
-    .beneficios, .incluye, .testimonios, .whatsapp, .confianza { margin-top: 30px; background: #111842; padding: 20px; border-radius: 12px; }
-    .beneficios ul, .incluye ul { padding-left: 20px; margin: 10px 0 0; }
-    .beneficios li, .incluye li { margin-bottom: 6px; }
-    .testimonio { margin-bottom: 15px; border-left: 3px solid #00ff99; padding-left: 10px; font-size: 14px; }
-    .testimonio strong { display: block; margin-top: 4px; color: #ffcc00; }
-    .whatsapp-btn {
-      display: inline-block;
-      background: #25d366;
-      color: #fff;
-      padding: 12px 22px;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-      margin-top: 10px;
-    }
-    .whatsapp-btn:hover { background: #1eb255; }
-    .whatsapp small { display: block; margin-top: 6px; color: #c0ffc0; }
-    .pill { display: inline-block; background: #222a5a; padding: 6px 10px; border-radius: 999px; font-size: 12px; margin: 4px 4px 0 0; }
-    .highlight { color: #ffcc00; font-weight: bold; }
-    @media (max-width: 768px) {
-      .hero { flex-direction: column; }
-      .precio-box::before { left: 50%; transform: translateX(-50%); }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOT SALE 🔥 Recursos Educativos · Mundial 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --hs:#FF4B00;--hs2:#FF6B2B;
+  --verde:#00A86B;--verde-o:#007A4E;
+  --amarillo:#FFD700;--azul:#1A2E6C;
+  --gris:#F7F4F0;--texto:#1A1A2E;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',sans-serif;background:var(--gris);color:var(--texto);overflow-x:hidden}
+
+/* TOP BAR */
+.topbar{background:var(--hs);color:white;text-align:center;padding:10px 16px;font-size:13px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+.topbar span{color:var(--amarillo)}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#1A0800 0%,#3D1000 45%,#1A0800 100%);position:relative;overflow:hidden;padding:52px 20px 64px;text-align:center}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(255,75,0,.28) 0%,transparent 55%),radial-gradient(ellipse at 80% 30%,rgba(255,200,0,.14) 0%,transparent 50%);pointer-events:none}
+.hs-logo{display:inline-flex;align-items:center;gap:8px;background:var(--hs);color:white;font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:.1em;padding:7px 20px;border-radius:6px;margin-bottom:16px;position:relative;box-shadow:0 0 28px rgba(255,75,0,.5)}
+.hs-logo small{font-family:'Nunito',sans-serif;font-size:10px;font-weight:800;letter-spacing:.12em;display:block;opacity:.8}
+.hero-eye{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--hs2);margin-bottom:10px;position:relative}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(38px,9vw,88px);color:white;line-height:.9;letter-spacing:.02em;position:relative}
+.hero h1 .ya{color:var(--amarillo)}.hero h1 .ha{color:var(--hs2)}
+.hero-sub{font-size:clamp(14px,2.2vw,18px);color:rgba(255,255,255,.72);margin-top:12px;font-weight:600;position:relative}
+.hero-cd{display:flex;gap:8px;justify-content:center;margin-top:24px;position:relative;flex-wrap:wrap}
+.cd-item{background:rgba(255,75,0,.2);border:1.5px solid rgba(255,75,0,.45);border-radius:10px;padding:10px 14px;text-align:center;min-width:64px}
+.cd-num{font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,5vw,40px);color:var(--amarillo);line-height:1;display:block}
+.cd-sep{font-family:'Bebas Neue',sans-serif;font-size:30px;color:rgba(255,75,0,.5);align-self:center;margin-bottom:14px}
+.cd-lbl{font-size:10px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+.hero-cta{display:inline-flex;align-items:center;gap:8px;background:var(--hs);color:white;font-size:clamp(15px,2.5vw,18px);font-weight:800;padding:14px 32px;border-radius:100px;margin-top:26px;text-decoration:none;position:relative;box-shadow:0 8px 32px rgba(255,75,0,.5);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+.hero-cta:hover{transform:translateY(-3px)!important;animation:none}
+
+/* NAV */
+.nav{background:white;padding:10px 16px;display:flex;justify-content:center;gap:6px;position:sticky;top:0;z-index:100;box-shadow:0 2px 20px rgba(0,0,0,.1);flex-wrap:wrap;border-bottom:3px solid var(--hs)}
+.nav a{text-decoration:none;font-size:clamp(11px,1.5vw,13px);font-weight:700;color:var(--azul);padding:6px 12px;border-radius:100px;border:2px solid transparent;transition:all .2s;white-space:nowrap}
+.nav a:hover,.nav a.hot{background:var(--hs);color:white;border-color:var(--hs)}
+
+/* URGENCIA */
+.urgencia{background:var(--hs);color:white;text-align:center;padding:14px 20px}
+.urgencia p{font-family:'Bebas Neue',sans-serif;font-size:clamp(16px,3.5vw,30px);letter-spacing:.04em}
+.urgencia span{color:var(--amarillo)}
+
+/* BUNDLE */
+.bundle{background:linear-gradient(135deg,var(--hs) 0%,#BB2900 100%);padding:56px 20px;text-align:center}
+.bundle-inner{max-width:760px;margin:0 auto}
+.bundle-tag{display:inline-block;background:var(--amarillo);color:#222;font-size:11px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:14px}
+.bundle-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,7vw,64px);color:white;line-height:.92;margin-bottom:10px}
+.bundle-desc{font-size:clamp(13px,2vw,15px);color:rgba(255,255,255,.86);font-weight:600;margin-bottom:22px;line-height:1.5}
+.bundle-chips{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.chip{background:rgba(255,255,255,.14);border:1.5px solid rgba(255,255,255,.28);border-radius:100px;padding:6px 14px;font-size:12px;font-weight:700;color:white}
+.box{background:white;border-radius:18px;padding:24px;max-width:440px;margin:0 auto 18px;box-shadow:0 8px 40px rgba(0,0,0,.25)}
+.box-title{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#888;margin-bottom:12px}
+.p-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:.5px solid #eee;flex-wrap:wrap;gap:6px}
+.p-row:last-of-type{border-bottom:none}
+.p-pais{font-size:13px;font-weight:700;color:var(--texto);display:flex;align-items:center;gap:5px}
+.p-antes{font-size:12px;color:#bbb;text-decoration:line-through;font-weight:600}
+.p-disc{background:var(--hs);color:white;font-size:10px;font-weight:900;padding:2px 7px;border-radius:100px;margin-left:4px}
+.p-ahora{font-family:'Bebas Neue',sans-serif;font-size:clamp(26px,5vw,34px);color:var(--hs);line-height:1}
+.p-ahora small{font-family:'Nunito',sans-serif;font-size:10px;color:#999;font-weight:600;display:block;text-align:right}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:100px;font-size:14px;font-weight:800;text-decoration:none;transition:all .2s;width:100%;margin-top:7px}
+.btn-mp{background:#009EE3;color:white}.btn-mp:hover{background:#0080BF;transform:translateY(-1px)}
+.btn-hot{background:#FF4D00;color:white}.btn-hot:hover{background:#D93F00;transform:translateY(-1px)}
+.btn-wa{background:#25D366;color:white}.btn-wa:hover{background:#1ebe5a;transform:translateY(-1px)}
+.bundle-note{font-size:12px;color:rgba(255,255,255,.65);margin-top:12px;font-weight:600;line-height:1.6}
+
+/* PRODUCTOS */
+.productos{padding:60px 20px}
+.prod-inner{max-width:1080px;margin:0 auto}
+.sec-lbl{text-align:center;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--hs);margin-bottom:10px}
+.sec-title{font-family:'Bebas Neue',sans-serif;text-align:center;font-size:clamp(28px,5vw,48px);color:var(--azul);line-height:1;margin-bottom:40px}
+
+.product{background:white;border-radius:20px;overflow:hidden;margin-bottom:32px;box-shadow:0 4px 32px rgba(0,0,0,.09);transition:transform .3s,box-shadow .3s;border:2px solid transparent}
+.product:hover{transform:translateY(-4px);box-shadow:0 14px 52px rgba(0,0,0,.13);border-color:var(--hs)}
+
+.pimg{position:relative;width:100%;background:#f0f0f0;overflow:hidden}
+.pimg img{width:100%;height:auto;display:block;object-fit:cover;object-position:center}
+.pbadge{position:absolute;top:12px;left:12px;background:var(--hs);color:white;font-size:11px;font-weight:800;padding:4px 11px;border-radius:100px;letter-spacing:.05em;text-transform:uppercase;z-index:2}
+.psticker{position:absolute;top:12px;right:12px;background:var(--amarillo);color:#222;font-size:11px;font-weight:900;padding:4px 11px;border-radius:100px;z-index:2}
+
+.pcontent{padding:28px 24px}
+.ptag{display:inline-flex;align-items:center;gap:5px;background:var(--gris);color:#555;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 11px;border-radius:100px;margin-bottom:10px;width:fit-content}
+.ptitle{font-family:'Bebas Neue',sans-serif;font-size:clamp(24px,4vw,36px);color:var(--azul);line-height:1;margin-bottom:6px}
+.phook{font-size:13px;font-weight:700;color:var(--hs);margin-bottom:10px}
+.pdesc{font-size:13px;color:#555;line-height:1.65;margin-bottom:14px}
+.feats{list-style:none;margin-bottom:16px;display:flex;flex-direction:column;gap:5px}
+.feats li{display:flex;align-items:flex-start;gap:8px;font-size:13px;font-weight:600;color:var(--texto)}
+.feats li::before{content:'✓';width:18px;height:18px;min-width:18px;background:var(--verde);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;margin-top:1px}
+
+.pbox{background:var(--gris);border-radius:12px;padding:14px;margin-bottom:14px}
+.pbox-title{font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--azul);margin-bottom:10px}
+.pfila{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:.5px solid rgba(0,0,0,.07);flex-wrap:wrap;gap:4px}
+.pfila:last-child{border-bottom:none}
+.ppais{font-size:13px;font-weight:700;color:var(--texto);display:flex;align-items:center;gap:4px}
+.pmonto{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--verde);line-height:1;text-align:right}
+.pmonto small{font-family:'Nunito',sans-serif;font-size:10px;color:#999;font-weight:600;display:block}
+.pbtn{display:flex;align-items:center;justify-content:center;gap:6px;padding:10px 14px;border-radius:100px;font-size:13px;font-weight:800;text-decoration:none;transition:all .2s;width:100%;margin-top:5px}
+.pbtn-mp{background:#009EE3;color:white}.pbtn-mp:hover{background:#0080BF}
+.pbtn-wa{background:#25D366;color:white}.pbtn-wa:hover{background:#1ebe5a}
+.nota{font-size:11px;color:#888;text-align:center;margin-top:5px;font-weight:600}
+
+@media(min-width:860px){
+  .product{display:grid;grid-template-columns:1fr 1fr}
+  .product.rev .pimg{order:2}
+  .product.rev .pcontent{order:1}
+  .pimg{min-height:460px}
+  .pimg img{width:100%;height:100%;object-fit:cover}
+}
+
+/* SOCIAL */
+.social{background:var(--azul);padding:52px 20px;text-align:center}
+.social h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(26px,5vw,44px);color:white;margin-bottom:30px}
+.proof-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;max-width:840px;margin:0 auto}
+.pcard{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:18px;text-align:left}
+.stars{color:var(--amarillo);font-size:16px;margin-bottom:7px}
+.pcard p{font-size:13px;color:rgba(255,255,255,.82);line-height:1.6;margin-bottom:8px;font-style:italic}
+.pcard span{font-size:12px;color:rgba(255,255,255,.42);font-weight:700}
+
+/* GARANTIA */
+.garantia{background:white;padding:48px 20px;text-align:center}
+.g-inner{max-width:520px;margin:0 auto}
+.g-inner .icon{font-size:48px;margin-bottom:12px}
+.g-inner h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,4vw,34px);color:var(--azul);margin-bottom:10px}
+.g-inner p{font-size:14px;color:#666;line-height:1.65}
+.g-wa{display:inline-flex;align-items:center;gap:8px;background:#25D366;color:white;padding:12px 24px;border-radius:100px;font-size:14px;font-weight:800;text-decoration:none;margin-top:16px;transition:all .2s}
+.g-wa:hover{background:#1ebe5a;transform:translateY(-2px)}
+
+/* CTA FINAL */
+.cta-final{background:linear-gradient(135deg,var(--hs) 0%,#BB2900 100%);padding:52px 20px;text-align:center}
+.cta-final h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(26px,5vw,50px);color:white;margin-bottom:8px}
+.cta-final p{font-size:clamp(13px,2vw,15px);color:rgba(255,255,255,.85);margin-bottom:22px;font-weight:600}
+.cta-final a{display:inline-flex;align-items:center;gap:8px;background:white;color:var(--hs);font-size:clamp(14px,2.5vw,17px);font-weight:800;padding:14px 34px;border-radius:100px;text-decoration:none;transition:all .2s}
+.cta-final a:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(0,0,0,.2)}
+
+footer{background:#0D0D0D;color:rgba(255,255,255,.45);text-align:center;padding:24px 20px;font-size:12px;line-height:1.8}
+footer strong{color:white}
+footer a{color:rgba(255,255,255,.55);text-decoration:none}
+</style>
 </head>
 <body>
-  <div class="container">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-text">
-        <span class="badge-ahorro">Bundle Mundial 2026 · Oferta especial</span>
-        <h1>Mega Pack Mundial 2026</h1>
-        <p>
-          Recursos listos para usar en el aula y en casa: actividades, cuentos, tarjetas y propuestas
-          temáticas del Mundial para trabajar valores, lectura y juego.
-        </p>
 
-        <div class="precio-box">
-          <p>
-            <span class="precio-tachado">Antes: U$S 27</span>
-            <span class="ahorro">AHORA: -60% de descuento</span>
-          </p>
-          <p class="precio-actual">Pagás sólo U$S 10 en un único pago</p>
-          <p style="font-size: 13px; color:#dddddd; margin-top:4px;">
-            Acceso total a todo el material. Sin cuotas, sin renovaciones.
-          </p>
-        </div>
+<div class="topbar">🔥 <span>HOT SALE · 11, 12 y 13 de mayo</span> · Hasta 27% OFF · Solo 3 días 🔥</div>
 
-        <p style="margin-top: 10px; font-size: 14px;">
-          <span class="highlight">Más de 50 familias ya lo descargaron</span> y lo están usando con sus hijos y alumnos.
-        </p>
-      </div>
-
-      <div class="hero-img">
-        <!-- Reemplaza la ruta de la imagen por la tuya en tu servidor/Hotmart -->
-        <img src="mega-pack-mundial-2026-600x600.jpg" alt="Mega Pack Mundial 2026 - Recursos educativos" />
-      </div>
-    </section>
-
-    <!-- QUÉ INCLUYE -->
-    <section class="incluye">
-      <h2>¿Qué incluye el Mega Pack?</h2>
-      <ul>
-        <li><strong>4 libros de lectura</strong> con historias de valores y Mundial 2026.</li>
-        <li><strong>3 libros para colorear y actividades</strong> con los personajes del pack.</li>
-        <li><strong>32 tarjetas de actividades</strong> a todo color, listas para imprimir o proyectar.</li>
-        <li><strong>Actividades digitales adicionales</strong> para seguir trabajando el tema Mundial.</li>
-        <li>Ideal para <strong>docentes, familias y escuelas</strong> que quieren propuestas listas para usar.</li>
-      </ul>
-    </section>
-
-    <!-- BENEFICIOS -->
-    <section class="beneficios">
-      <h2>Beneficios para vos y tus chicos</h2>
-      <ul>
-        <li>Actividades <strong>educativas</strong> que trabajan lectura, escritura, valores y juego.</li>
-        <li>Contenido <strong>temático del Mundial</strong> que engancha a los chicos de inmediato.</li>
-        <li>Propuestas <strong>variadas</strong>: cuentos, juegos, tarjetas, actividades impresas y digitales.</li>
-        <li>Todo en un solo pack, listo para descargar y usar al instante.</li>
-      </ul>
-      <div style="margin-top: 10px;">
-        <span class="pill">Acceso inmediato</span>
-        <span class="pill">Material imprimible</span>
-        <span class="pill">Ideal para proyectos de aula</span>
-      </div>
-    </section>
-
-    <!-- TESTIMONIOS -->
-    <section class="testimonios">
-      <h2>Lo que dicen maestras y familias</h2>
-
-      <div class="testimonio">
-        “Usé el Mega Pack Mundial con mi grupo de 3º grado y fue un éxito.  
-        Los chicos se engancharon con las historias y las actividades, y pude trabajar valores y lectura de una forma súper lúdica.”
-        <strong>Mariana, maestra de primaria</strong>
-      </div>
-
-      <div class="testimonio">
-        “Lo descargamos para hacer actividades en casa y terminamos armando ‘tardes de Mundial’ en familia.  
-        Es muy práctico tener todo armado y con los personajes que a los chicos les encantan.”
-        <strong>Laura, mamá de dos peques</strong>
-      </div>
-
-      <div class="testimonio">
-        “Me sirvió muchísimo para completar mi planificación del mes.  
-        Las tarjetas y las propuestas digitales me ahorraron horas de preparación.”
-        <strong>Silvia, docente de nivel inicial</strong>
-      </div>
-
-      <p style="margin-top: 10px; font-size: 14px;">
-        <span class="highlight">Más de 50 familias y docentes ya descargaron el pack</span> y lo integraron a sus actividades.
-      </p>
-    </section>
-
-    <!-- WHATSAPP -->
-    <section class="whatsapp">
-      <h2>¿Querés comprarlo ahora por WhatsApp?</h2>
-      <p>
-        Escribinos y te enviamos el link de pago directo para que tengas acceso inmediato al Mega Pack Mundial 2026.
-      </p>
-
-      <!-- Reemplaza el número de teléfono por el tuyo en formato internacional -->
-      <a
-        class="whatsapp-btn"
-        href="https://wa.me/549XXXXXXXXXX?text=Hola!%20Vi%20el%20anuncio%20del%20Bundle%20Mundial%202026%20y%20quiero%20comprarlo.%20%C2%BFMe%20mand%C3%A1s%20el%20link%20de%20pago%3F"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Escribir por WhatsApp
-      </a>
-
-      <small>
-        Mensaje prellenado: “Hola! Vi el anuncio del Bundle Mundial 2026 y quiero comprarlo. ¿Me mandás el link de pago?”
-      </small>
-    </section>
-
-    <!-- CONFIANZA -->
-    <section class="confianza">
-      <h3>Compra segura y acceso inmediato</h3>
-      <p>
-        El pack se entrega a través de plataformas digitales confiables.  
-        Una vez realizado el pago, recibís el acceso al instante para descargar todo el material.
-      </p>
-      <p style="font-size: 13px; color:#dddddd;">
-        Si tenés dudas, podés escribirnos por WhatsApp antes de comprar y te respondemos a la brevedad.
-      </p>
-    </section>
+<section class="hero">
+  <div class="hs-logo">🔥 HOT SALE <small>2026</small></div>
+  <p class="hero-eye">Oferta exclusiva · 11 al 13 de mayo</p>
+  <h1>RECURSOS EDUCATIVOS<br><span class="ya">MUNDIAL 2026</span><br><span class="ha">AL MEJOR PRECIO</span></h1>
+  <p class="hero-sub">3 días. 3 productos. 1 precio increíble. Solo hasta el 13 de mayo.</p>
+  <div class="hero-cd">
+    <div class="cd-item"><span class="cd-num" id="dias">--</span><span class="cd-lbl">Días</span></div>
+    <span class="cd-sep">:</span>
+    <div class="cd-item"><span class="cd-num" id="horas">--</span><span class="cd-lbl">Horas</span></div>
+    <span class="cd-sep">:</span>
+    <div class="cd-item"><span class="cd-num" id="mins">--</span><span class="cd-lbl">Min</span></div>
+    <span class="cd-sep">:</span>
+    <div class="cd-item"><span class="cd-num" id="segs">--</span><span class="cd-lbl">Seg</span></div>
   </div>
+  <a href="#bundle" class="hero-cta">🔥 Ver oferta Hot Sale</a>
+</section>
+
+<nav class="nav">
+  <a href="#bundle" class="hot">🔥 Bundle Hot Sale</a>
+  <a href="#mascotas">📚 Mascotas</a>
+  <a href="#tarjetas">🃏 Tarjetas</a>
+  <a href="#actividades">🎓 Actividades</a>
+</nav>
+
+<div class="urgencia">
+  <p>⚡ <span>HOT SALE</span> · Termina el 13 de mayo a medianoche · <span id="dias-b">--</span> días restantes ⚡</p>
+</div>
+
+<section class="bundle" id="bundle">
+  <div class="bundle-inner">
+    <span class="bundle-tag">⭐ Oferta estrella Hot Sale</span>
+    <h2 class="bundle-title">BUNDLE COMPLETO<br>LOS 3 PACKS EN UNO</h2>
+    <p class="bundle-desc">Mascotas del Mundial · Tarjetas de Actividades · Pack Actividades Curriculares<br>Todo junto, al precio más bajo del año.</p>
+    <div class="bundle-chips">
+      <span class="chip">📚 7 Libros PDF</span>
+      <span class="chip">🃏 32 Tarjetas</span>
+      <span class="chip">🎓 45 Actividades</span>
+      <span class="chip">⚡ Descarga inmediata</span>
+    </div>
+    <div class="box">
+      <p class="box-title">Precio Hot Sale · 11 al 13 de mayo únicamente</p>
+      <div class="p-row">
+        <span class="p-pais">🇦🇷 Argentina</span>
+        <div style="text-align:right">
+          <span class="p-antes">$20.540</span><span class="p-disc">-27%</span><br>
+          <span class="p-ahora">$15.000<small>pesos argentinos</small></span>
+        </div>
+      </div>
+      <a href="https://mpago.la/1dGwHba" class="btn btn-mp" target="_blank">💳 Pagar con Mercado Pago · AR</a>
+      <div class="p-row" style="margin-top:14px">
+        <span class="p-pais">🌎 Otros países</span>
+        <div style="text-align:right">
+          <span class="p-antes">U$S 14</span><span class="p-disc">-14%</span><br>
+          <span class="p-ahora">U$S 12<small>dólares</small></span>
+        </div>
+      </div>
+      <!-- MODIFICACIÓN SOLICITADA AQUÍ -->
+      <a href="https://pay.hotmart.com/G105764963E" class="btn btn-hot" target="_blank">🔥 compra internacional por Hotmart</a>
+      
+      <a href="https://wa.me/5492983527029?text=BUNDLE%20HOTSALE" class="btn btn-wa" target="_blank" style="margin-top:8px">💬 Consultar por WhatsApp</a>
+    </div>
+    <p class="bundle-note">⏰ Oferta válida solo 11, 12 y 13 de mayo 2026 · Descarga inmediata al pagar</p>
+  </div>
+</section>
+
+<section class="productos">
+  <div class="prod-inner">
+    <p class="sec-lbl">🔥 También disponibles por separado</p>
+    <h2 class="sec-title">ELEGÍ TU PACK</h2>
+
+    <!-- PRODUCTO 1: MASCOTAS (ORIGINAL) -->
+    <div class="product" id="mascotas">
+      <div class="pimg">
+        <span class="pbadge">📚 7 Libros PDF</span>
+        <span class="psticker">🔥 Hot Sale</span>
+        <img src="https://i.postimg.cc/85zXmK9H/3.png" alt="Mascotas del Mundial">
+      </div>
+      <div class="pcontent">
+        <span class="ptag">#EducaciónInicial</span>
+        <h3 class="ptitle">Mascotas del Mundial</h3>
+        <p class="phook">¡Conoce a los personajes más divertidos!</p>
+        <p class="pdesc">Un recorrido pedagógico por la historia de las mascotas, ideal para trabajar geografía y cultura.</p>
+        <div class="pbox">
+           <div class="pfila"><span class="ppais">🇦🇷 Argentina</span><span class="pmonto">$7.000</span></div>
+           <div class="pfila"><span class="ppais">🌎 Otros países</span><span class="pmonto">U$S 6</span></div>
+        </div>
+        <a href="https://mpago.la/2SndGzV" class="pbtn pbtn-mp" target="_blank">Pagar con Mercado Pago</a>
+        <a href="https://wa.me/5492983527029?text=MASCOTAS%20HOTSALE%20USD" class="pbtn pbtn-wa" target="_blank">Consultar Internacional por WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- PRODUCTO 2: TARJETAS (ORIGINAL) -->
+    <div class="product rev" id="tarjetas">
+      <div class="pimg">
+        <span class="pbadge">🃏 32 Tarjetas</span>
+        <span class="psticker">🔥 Hot Sale</span>
+        <img src="https://i.postimg.cc/9Fm99S9p/1.png" alt="Tarjetas de Actividades">
+      </div>
+      <div class="pcontent">
+        <span class="ptag">#JuegosAula</span>
+        <h3 class="ptitle">Tarjetas de Actividades</h3>
+        <p class="phook">Desafíos rápidos para el aula</p>
+        <p class="pdesc">Juegos de memoria, trivia y desafíos físicos basados en el Mundial 2026.</p>
+        <div class="pbox">
+           <div class="pfila"><span class="ppais">🇦🇷 Argentina</span><span class="pmonto">$7.000</span></div>
+           <div class="pfila"><span class="ppais">🌎 Otros países</span><span class="pmonto">U$S 6</span></div>
+        </div>
+        <a href="https://mpago.la/2SndGzV" class="pbtn pbtn-mp" target="_blank">Pagar con Mercado Pago</a>
+        <a href="https://wa.me/5492983527029?text=TARJETAS%20HOTSALE%20USD" class="pbtn pbtn-wa" target="_blank">Consultar Internacional por WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- PRODUCTO 3: ACTIVIDADES (ORIGINAL) -->
+    <div class="product" id="actividades">
+      <div class="pimg">
+        <span class="pbadge">🎓 45 Actividades</span>
+        <span class="psticker">🔥 Hot Sale</span>
+        <img src="https://i.postimg.cc/tJn4Vf9n/2.png" alt="Pack de Actividades">
+      </div>
+      <div class="pcontent">
+        <span class="ptag">#Curriculares</span>
+        <h3 class="ptitle">Pack Curricular</h3>
+        <p class="phook">Matemática, Lengua y más...</p>
+        <p class="pdesc">Ejercicios adaptados a los contenidos escolares usando las estadísticas y sedes del mundial.</p>
+        <div class="pbox">
+           <div class="pfila"><span class="ppais">🇦🇷 Argentina</span><span class="pmonto">$8.500</span></div>
+           <div class="pfila"><span class="ppais">🌎 Otros países</span><span class="pmonto">U$S 8</span></div>
+        </div>
+        <a href="https://mpago.la/2SndGzV" class="pbtn pbtn-mp" target="_blank">Pagar con Mercado Pago</a>
+        <a href="https://wa.me/5492983527029?text=PACK%20HOTSALE%20USD" class="pbtn pbtn-wa" target="_blank">Consultar Internacional por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="social">
+  <h2>¡Docentes felices en todo el mundo!</h2>
+  <div class="proof-grid">
+    <div class="pcard">
+      <div class="stars">★★★★★</div>
+      <p>"Material excelente, mis alumnos están super motivados con el mundial."</p>
+      <span>- Laura M., Argentina</span>
+    </div>
+    <div class="pcard">
+      <div class="stars">★★★★★</div>
+      <p>"Fácil de descargar y las tarjetas son preciosas. ¡Gracias!"</p>
+      <span>- Carlos R., México</span>
+    </div>
+  </div>
+</section>
+
+<section class="garantia">
+  <div class="g-inner">
+    <div class="icon">🛡️</div>
+    <h2>Compra 100% Segura</h2>
+    <p>Recibes el acceso a los materiales PDF de forma automática tras el pago.</p>
+    <a href="https://wa.me/5492983527029" class="g-wa">💬 Hablar con Soporte</a>
+  </div>
+</section>
+
+<footer style="text-align:center; padding: 40px; background:#000; color:#fff;">
+  <p>© 2026 Recursos Educativos Mundial</p>
+</footer>
+
+<script>
+// Countdown logic
+const targetDate = new Date("May 14, 2026 00:00:00").getTime();
+
+function updateCountdown() {
+  const now = new Date().getTime();
+  const gap = targetDate - now;
+
+  const second = 1000;
+  const minute = second * 60;
+  const hour = minute * 60;
+  const day = hour * 24;
+
+  const d = Math.floor(gap / day);
+  const h = Math.floor((gap % day) / hour);
+  const m = Math.floor((gap % hour) / minute);
+  const s = Math.floor((gap % minute) / second);
+
+  document.getElementById('dias').innerText = d;
+  document.getElementById('horas').innerText = h;
+  document.getElementById('mins').innerText = m;
+  document.getElementById('segs').innerText = s;
+  document.getElementById('dias-b').innerText = d;
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
+</script>
+
 </body>
 </html>
-
